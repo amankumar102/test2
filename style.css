@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Genos", sans-serif;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#nav{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    padding: 0 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav>h1{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+#nav #part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav #part2 a{
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+}
+
+#nav #part2 a:nth-last-child(1){
+    position: relative;
+    overflow: hidden;
+    padding: 8px 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+#nav #part2 a:nth-last-child(1) #green{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    height: 100%;
+    transition: left 0.4s ease;
+}
+
+#nav #part2 a:nth-last-child(1) h5{
+    font-weight: 450;
+    position: relative;
+    z-index: 99;
+}
+
+#nav #part2 a:nth-last-child(1):hover #green{
+    left: 0%;
+}
+
+#main>h1{
+    position: relative;
+    z-index: 99;
+    font-size: 6vw;
+    font-weight: 400;
+    text-align: center;
+    width: 60%;
+}
+
+#main #img1{
+    height: 450px;
+    width: 280px;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+}
+
+#main #img2{
+    height: 250px;
+    width: 340px;
+    position: absolute;
+    top: 19%;
+    left: 53%;
+}
+
+#main #img3{
+    height: 240px;
+    width: 200px;
+    position: absolute;
+    top: 58%;
+    right: 10%;
+}
+
+#main img{
+    transition: margin 0.5s ease;
+}
+
+#main img:hover{
+    margin-top: -10px;
+}
